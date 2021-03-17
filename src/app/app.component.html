@@ -1,0 +1,31 @@
+<section class="materials">
+  <h1>Uzupełnij posiadane surowce</h1>
+  <form>
+    <div class="form-group">
+      <label for="wood">Podaj ilość drewna</label>
+      <input type="number" class="form-control" id="wood" placeholder="Drewno">
+    </div>
+    <div class="form-group">
+      <label for="food">Podaj ilość pożywienia</label>
+      <input type="number" class="form-control" id="food" placeholder="Pożywienie">
+    </div>
+    <div class="form-group">
+      <label for="stone">Podaj ilość kamieni</label>
+      <input type="number" class="form-control" id="stone" placeholder="Kamień">
+    </div>
+    <div class="form-group">
+      <label for="gold">Podaj ilość złota</label>
+      <input type="number" class="form-control" id="gold" placeholder="Złota">
+    </div>
+    <button class="btn btn-primary" (click)="materialsQuantity($event)" >Oblicz</button>
+  </form>
+</section>
+<section class="units" *ngIf="unitsList" >
+  <div class="units-item" *ngFor="let item of units.units">
+    <p class="item-name">{{item.name}}</p>
+    <p class="item-quantity"> {{unitQuantity(item.cost)}} - jednostek</p>
+  </div>
+</section>
+
+
+<router-outlet></router-outlet>

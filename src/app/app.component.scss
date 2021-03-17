@@ -1,0 +1,69 @@
+.materials,
+.units {
+  max-width: 33.3rem;
+  width: 100%;
+}
+
+.materials {
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .form-group {
+      width: 48%;
+    }
+
+    label {
+      display: none;
+    }
+
+    input {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border: 1px solid black;
+      border-radius: 5px;
+
+      &::placeholder {
+        color: gray;
+        font-weight: 400;
+      }
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.units {
+  max-height: 138px;
+  overflow-y: auto;
+
+
+  .units-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 15px 15px 15px 0;
+  }
+
+  .item-name,
+  .item-quantity {
+    font-size: 1.5rem;
+    color: black;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+
+  .item-name {
+    color: black;
+  }
+
+  .item-quantity {
+    color: gray;
+  }
+}
