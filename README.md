@@ -1,3 +1,5 @@
+If you any problem with CORS, try to add to Chorme https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
+
 # Sages
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
